@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Q11</title>
+</head>
+<body>
+     <script>
+        // 10. array ascending  order sort.
+        var no = parseInt(prompt(`Enter Array size :- `));
+          let arr = [];
+          for (let i = 0; i < no; i++) {
+               arr[i] = parseInt(prompt(`Enter a[${i}] :- `));
+               
+          }
+
+          console.log(arr);
+
+          console.log("Array in Decending order.");
+          for (let i = 0; i < arr.length; i++) {
+            for (let j = i+1; j < arr.length; j++) {
+              if(arr[i]<arr[j]){
+                var temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+              }              
+            }
+            
+          }
+
+          console.log(arr);
+</script>
+</body>
+</html>

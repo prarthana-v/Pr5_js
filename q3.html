@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>q3</title>
+</head>
+<body>
+     <script>
+          // find minummum number in array.
+          
+          var no = parseInt(prompt(`Enter Array size :- `));
+          let arr = [];
+          for (let i = 0; i < no; i++) {
+               arr[i] = parseInt(prompt(`Enter a[${i}] :- `));
+               
+          }
+
+          console.log(arr);
+          minimum_No = arr[0]
+          for (let i = 0; i < no; i++) {
+               if(arr[i]<minimum_No){
+                    minimum_No = arr[i];
+               }
+          }
+
+          console.log(minimum_No);
+     </script>
+</body>
+</html>
